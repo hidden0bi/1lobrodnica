@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>1 LO BRODNICA</title>
+		<link rel="stylesheet" href="style main.css">
+		<meta charset="UTF-8">
+		<lang="pl">
+		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+			      rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:wght@600&display=swap"
+				  rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:wght@300&display=swap"
+				  rel="stylesheet">
+				  
+				<script src="navbar.js"></script>
+				<script src="scrollblur.js"></script>
+		
+	</head>
+	
+<body>
+		<div class="banner">
+			<div class="navbar">
+				 <div class="logo"><a href="main.html"><img src="logoszkoly.png" class="logo" alt="logo" /></a></div>
+					<div id='show_bg_2'></div>
+				<ul>
+					<li><a href="https://1lo-brodnica.edupage.org/a/oferta-edukacyjna">Co oferujemy?</a></li>
+					<li><a href="https://1lo-brodnica.edupage.org/a/proponowane-klasy">Profile</a></li>
+					<li><a href="https://1lo-brodnica.edupage.org/a/rekrutacja">Złóż podanie</a></li>
+					<li><a href="https://view.genial.ly/625fce7ed9b0e20014cbb16a/interactive-content-escape-room-brodnica-by-szymon-gul">Escape Room</a></li>
+				</ul>
+			</div>
+		</div>
+		
+				<article>
+				<img src="szkolne tlocrop.jpg" alt="tlo" class='img-blur'>
+				<div class ="tekst-glowny">
+				
+				<h1>Dołącz do nas! </h1>
+				<p>Rozgość się i sprawdź inne zakładki</p>
+			
+
+			
+				<div class="content">
+		<button class="button" onclick="window.location.href = 'https://1lo-brodnica.edupage.org/a/oferta-edukacyjna'"><span></span>CO OFERUJEMY?</button>
+		<button class="button" onclick="window.location.href = 'https://1lo-brodnica.edupage.org/a/proponowane-klasy'"><span></span>PROFILE</button>
+		<button class="button" onclick="window.location.href = 'https://1lo-brodnica.edupage.org/a/rekrutacja'"><span></span>PODANIE</button>
+		<button class="button" onclick="window.location.href = 'https://view.genial.ly/625fce7ed9b0e20014cbb16a/interactive-content-escape-room-brodnica-by-szymon-gul'"><span></span>ESCAPE ROOM</button>
+		</div>
+				</div>
+		</article>
+		
+		
+				<article>
+		<div class ="szkola">
+		<img src="tloszkolne.jpg" alt="elo">
+		<h1>O nas</h1>
+		<p>Jesteśmy szkołą ponadgimnazjalną oferującą wysokiej jakości edukację w Brodnicy. Nasza szkoła istnieje od 1956 roku i od tego czasu przygotowaliśmy wiele pokoleń młodych ludzi do dalszej nauki oraz do życia w społeczeństwie.</p>
+		</div>
+				</article>
+				
+				<article>
+		<div class ="dzialalnosc">
+		<img src="szkolaa.jpg" alt="elo">
+		<h1>Działalność</h1>
+		<p>W szkole organizujemy wiele ciekawych zajęć pozalekcyjnych, takich jak koła zainteresowań, zajęcia sportowe, teatralne, muzyczne oraz wiele innych. Dzięki temu nasi uczniowie mogą rozwijać swoje zainteresowania oraz nawiązywać nowe znajomości.</p>
+		</div>
+				</article>
+
+
+<div class ="kontakt">
+		<img src="szkolka.jpg" alt="elo">
+		<h1>Kontakt</h1>
+	
+		<p>Adres: I Liceum Ogólnokształcące, 87-300 Brodnica,</br> ul. Lidzbarska 14</br>
+87-300 Brodnica</br>
+Telefon: 0-56 4982016</br>
+E-mail: sekretariat@1lobrodnica.pl</p>
+		</div>
+				</article>
+
+
+
+
+	<script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+	<script type='text/javascript'>
+		$(window).scroll(function(){
+			var scroll = $(window).scrollTop();
+			$('.img-blur').css({
+				filter: "blur(" + (scroll/100) + "px)"
+				})
+		})
+	</script>
+	
+
+	
+	</body>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</html>

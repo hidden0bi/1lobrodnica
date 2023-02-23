@@ -1,0 +1,427 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+.banner{
+	background-color: black;
+	width: 100%;
+	height: 100vx;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	box-shadow: 0px 0px 80px 5px #000;
+	z-index: 0;
+}
+
+.navbar{
+	width: 85%;
+	margin: auto;
+	padding: 10px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	
+}
+.logo{
+	width: 100px;
+}
+.navbar ul li{
+	list-style: none;
+	display: inline-block;
+	margin: 0 20px;
+	position: relative;
+}
+.navbar ul li a{
+	text-decoration: none;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-family: 'Sofia Sans Extra Condensed', sans-serif;
+	font-size: 26px;
+}
+.navbar ul li::after{
+	content: '';
+	height: 3px;
+	width: 0;
+	background: #ffffff;
+	position: absolute;
+	left: 0;
+	bottom: -5px;
+	transition: 0.35s;
+}
+.navbar ul li:hover::after{
+	width: 100%;
+}
+body {
+  background: #181414;
+  width: 100%;
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+}
+.content{
+	width: 100%;
+	position: absolute;
+	margin-top: 3%;
+	transform: translateY(-50%);
+	text-align: center;
+	color: #fff;
+	font-size: 30px;
+	text-shadow: 0px 0px 12px 12px #000000;
+}
+.content h1{
+	font-size: 70px;
+	margin-top: 80px;
+}
+.content p{
+	margin: 20px auto;
+	line-height: 25px;
+}
+.textgorny{
+	width: 100%;
+	position: aboslute;
+	top: 30%;
+	text-align: center;
+	color: #fff;
+	font-size: 40px;
+	text-shadow: 0px 3px #000000;
+	margin: 20px;
+}
+.texcik{
+	text-align: center;
+	color: #fff;
+	text-shadow: 0px 2px #000000;
+}
+.reakcja{
+	margin: 50px;
+	color: #fff;
+	text-shadow: 0px 2px #000000;
+	font-size: 30px;
+}
+.reakcja_poz{
+	margin: 70px;
+	color: #fff;
+	text-shadow: 0px 2px #000000;
+	font-size: 20px;
+}
+button{
+	width: 200px;
+	padding: 15px 0;
+	text-align: center;
+	margin: 20px 10px;
+	border-radius: 25px;
+	font-weight: bold;
+	border: 2px solid #343434;
+	background: transparent;
+	color: #fff;
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+	z-index: 0;
+}
+span{
+	background: #343434;
+	height: 100%;
+	width: 100%;
+	border-radius: 25px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: -1;
+	transition: 0.5s;
+}
+
+.tekst-glowny{
+	font-family: 'Bebas Neue';
+	margin: 0;
+	width: 100%;
+	position: absolute;
+	top: 33%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+	color: #fff;
+	font-size: 30px;
+}
+
+.tekst-glowny h1{
+	font-family: 'Bebas Neue';
+	margin: 0;
+	line-height: 1;
+	font-size: 70px;
+	color: transparent;
+	text-transform: uppercase;
+	background-image: linear-gradient(to left, #00cde2, #c501ff, #01ffeb);
+	-webkit-background-clip: text;
+	animation: animate 12s linear infinite;
+	-webkit-background-size: 500%;
+	background-size: 500%;
+	text-align: center;
+}
+.tekst-glowny p{
+	font-family: 'Sofia Sans Extra Condensed', sans-serif;
+	margin: 0;
+	line-height: 1;
+	font-size: 50px;
+	text-transform: uppercase;
+	color: #fff;
+	text-align: center;
+	text-shadow: 1px 1px 20px black;
+}
+
+.tekst-boczny{
+	font-family: 'Sofia Sans Extra Condensed', sans-serif;
+	margin: 0;
+	width: 100%;
+	margin-top: 1%;
+	top: 30%;
+	margin-left: 30%;
+	line-height: 1;
+	font-size: 30px;
+	color: white;
+	text-transform: uppercase;
+	float: right;
+}
+
+/* obrazek szkoły */
+.szkola{
+  display: flex;
+  margin-left: 4%;
+  width: auto;
+  margin-top: 15%;
+  filter: drop-shadow(0 0 6px #000000); /* Daj trochę odstępu między obrazkiem a tekstem */
+	overflow: hidden;
+	  align-items: center;
+	  zoom: 95%;
+}
+
+.szkola img{
+  margin-left: 2%;
+  width: 600px;
+  margin-top: 15%;
+  border: 5px solid #ffffff;
+  border-radius: 10px;
+  filter: drop-shadow(0 0 6px #000000);
+  float: left;
+  margin-right: 10px; /* Daj trochę odstępu między obrazkiem a tekstem */
+}
+
+.szkola h1{
+  margin-left: 3%;
+  color: white;
+  font-family: 'Bebas Neue';
+  filter: drop-shadow(0 0 6px #000000);
+  margin-right: 10px; /* Daj trochę odstępu między obrazkiem a tekstem */
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  float: right;
+
+}
+
+.szkola p{
+  margin-left: 2%;
+  width: 500px;
+  color: white;
+  font-family: 'Sofia Sans Extra Condensed', sans-serif;
+  margin-top: 15%;
+  filter: drop-shadow(0 0 6px #000000);
+  font-size: 30px;
+  display: flex;
+    float: right;
+	  align-items: center;
+	  text-align: justify;
+	  
+}
+
+.dzialalnosc{
+  display: flex;
+  margin-left: 4%;
+  width: auto;
+  margin-top: 2%;
+  filter: drop-shadow(0 0 6px #000000); /* Daj trochę odstępu między obrazkiem a tekstem */
+	overflow: hidden;
+	  align-items: center;
+	  zoom: 95%;
+}
+
+.dzialalnosc img{
+  margin-left: 2%;
+  width: 600px;
+  margin-top: 15%;
+  border: 5px solid #ffffff;
+  border-radius: 10px;
+  filter: drop-shadow(0 0 6px #000000);
+  float: left;
+  margin-right: 10px; /* Daj trochę odstępu między obrazkiem a tekstem */
+}
+
+.dzialalnosc h1{
+ margin-left: 3%;
+  color: white;
+  font-family: 'Bebas Neue';
+  filter: drop-shadow(0 0 6px #000000);
+  margin-right: 10px; /* Daj trochę odstępu między obrazkiem a tekstem */
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  float: right;
+
+}
+
+.dzialalnosc p{
+  margin-left: 2%;
+  width: 500px;
+  color: white;
+  font-family: 'Sofia Sans Extra Condensed', sans-serif;
+  margin-top: 15%;
+  filter: drop-shadow(0 0 6px #000000);
+  font-size: 30px;
+  display: flex;
+    float: right;
+	  align-items: center;
+	  text-align: justify;
+	  
+}
+
+.kontakt{
+  display: flex;
+  margin-left: 4%;
+  width: auto;
+  margin-top: 2%;
+  filter: drop-shadow(0 0 6px #000000); /* Daj trochę odstępu między obrazkiem a tekstem */
+	overflow: hidden;
+	  align-items: center;
+	  zoom: 95%;
+}
+
+.kontakt img{
+  margin-left: 2%;
+  width: 600px;
+  margin-top: 15%;
+  border: 5px solid #ffffff;
+  border-radius: 10px;
+  filter: drop-shadow(0 0 6px #000000);
+  float: left;
+  margin-right: 10px; /* Daj trochę odstępu między obrazkiem a tekstem */
+}
+
+.kontakt h1{
+  margin-left: 3%;
+  color: white;
+  font-family: 'Bebas Neue';
+  filter: drop-shadow(0 0 6px #000000);
+  margin-right: 10px; /* Daj trochę odstępu między obrazkiem a tekstem */
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  float: right;
+
+}
+
+.kontakt p{
+  margin-left: 2%;
+  width: 500px;
+  color: white;
+  font-family: 'Sofia Sans Extra Condensed', sans-serif;
+  margin-top: 15%;
+  filter: drop-shadow(0 0 6px #000000);
+  font-size: 30px;
+  display: flex;
+    float: right;
+	  align-items: center;
+	  text-align: justify;
+	  
+}
+
+
+
+
+
+
+
+
+
+.kontener {
+  position: relative;
+  text-align: center;
+}
+.img-blur{
+	margin-top: %;
+	height: 30%;
+	width: 100%; /*Scales image to 150% width of parent container*/
+    float: left; /*Floats image to left of container - clipping right hand side*/
+    float: right; /*Floats image to right of container - clipping left hand side*/
+	overflow: hidden;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+#footer {
+   position: fixed;
+   bottom: 0;
+   width: 100%;
+   height: 60px;   /* Height of the footer */
+   background: #6cf;
+}
+
+@media screen and (max-width: 767px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav li {
+    margin: 0.5rem 0;
+  }
+
+
+
+
+
+
+ 
+
+@-webkit-keyframes tekscior {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-moz-keyframes tekscior {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-o-keyframes tekscior {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@keyframes tekscior {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+
+
+@keyframes animate {
+	0%{
+		background-position: 0 100%;
+	}
+	50%{
+		background-position: 100% 0;
+	}
+	100%{
+		background-position: 0 100%;
+	}
+}
+ 
