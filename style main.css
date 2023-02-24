@@ -193,7 +193,7 @@ span{
   display: flex;
   margin-left: 4%;
   width: auto;
-  margin-top: 15%;
+  margin-top: 10%;
   filter: drop-shadow(0 0 6px #000000); /* Daj trochę odstępu między obrazkiem a tekstem */
 	overflow: hidden;
 	  align-items: center;
